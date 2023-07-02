@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Them: Login</title>
+    <link rel="shortcut icon" href="Picture1.png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <p style="font-size:40px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;margin-left: 750px;margin-top: 100px;">Login Page</p>
+    <div class="login">
+      <img src="./logo.png" class="title">
+        <div id="user"><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZlJREFUSEvFlo1NQzEMhN1NYBJgEzoJMAkwCTBJ2QT0Vc9RnrFjJ4BqqarUxjnf+Sc+yIXscCFcWQG+EpFbEeH7cwuc7/cZElVgQO5F5GFwuYI/dQGFxyvAjwmgvZwAXkUEvyVgWD5vss6oqGcJ4C5iHzEG9LSCZnxC8Aj47RdMPemv7Y8eMPJSSJnBhg8VntmLiBz7Qxa4IjFtQ+7UqhUPcGs5C5yxheEP2baezgpxx9oCU1AwiIyoucCzrO12QffA5IqiGhkSRxOKuoB1yb8HrjgylaLBUPFvgc8CRzmGZaUFW+A9cJYjlRCpybU+EDMTrtXIbI77/M30sfr9CXA2NLz/acWzUradvpLb9OWxlU1H3BSmWMObGSCjVuqnWPS4DAeINzJhuRt3iSrcQYXbQdRk9qTmNzs2Sw97F4zXz+kjgX/UHraNLPGRX/+onP1Gi4Anl/YuQXxsyABGhTW9CChzD7zaRkurT1+l2XbpBTKa6UOpvfxlAWgRUkiaklCdynrrBaHrji71/7bQV/NaPrfCuHz56OA3ZnljH7NalQMAAAAASUVORK5CYII=" />
+            <input type="text" id="email" placeholder="User Id">
+            <img id="error" style="margin-right: 10px; display:none; transition-duration: 0s;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAcdJREFUSEvFlkF2gjAQhmfQRWu7xfe6w5OIN9GTqCfRnsRwEt31Pd22tAtl+hIamkQIE6iVJZB8889k/gzCnR68ExeCwW/pQzKAQYpACQEeZOAIeIjFuwgRwQJL2BCiORAsmzYnABmEuGCxfhFfKiDf4wVzgO7mOoBxli86gVVKKdohQNIWfd13GcAFi1mT+lrFSilF+y5Ac40PXgs+Tkf7rkrrUj/O8on7/gp8nI42CDBvV0vqFBNg0hYkAWzdmlvgU/qcAhU7DjTOPmfyv9P0cQeAqW+NTDlitDBbzgKHqA0Bl0GR0GvK3jcefm1/N+EoLksCB7PWFZifZjt6Lljpw2im012Bj+nTHIk27fXtDibExVh8bK1U/wcYENaxyFcW+JSOVj4vtjMRXmOVpzrFITVW7QH0cxH4W8lysr5g3jm4/uuMxUR7d3W4wv2Z71w6hDjLK57tXAwXcs2A206ubVpgvuoOh8vo4Svnki84thl6uFovCQnuOwB0vhY1/C8GAdcmzaAaZ66+yuuuQha4Ut4yXdb2tGGNTT3PHm8HFC19k0mpEF7PUGx7j7dutOW4O0wISE2eeqi/2UDf1SJ961ipvgX4G8ETCS5pARnvAAAAAElFTkSuQmCC">
+        </div>
+        <hr id="hra">
+        <div id="lock"><img id="lockimg"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAASRJREFUSEvtlo0JwjAQhV8nUTfRTXQSdRJ1Et1EnUT5IIXT5remLYoHgjQlX9673F0bTRTNRFz1Bc8lrSXd3O9SKqAUvJR09kA4wEnSLvcAJWAUHhIb73PhuWCrFHUAjpKwnLWt+8/aRlLS+lww9gIgFi6vVjwHuLoHQFcpy3PBD7dRzEryi3JUc7ho5ICtzdiIxb6w76E4ancpOLbhH9zb6rY7zVyXIq/k9x7Ise89Lpr3ToRynNMsUhe3XfdWQghMTaK4RnjLKwRu67YGmD06nK8Ekzt7oWLuVFNsG4nt0yF4FTDlQeu0wbikEgYF+6bPKOD3mTua1dhpVdtZPajVvwmu2TKLOtdkQ4JT8kXBjf1kWFDzVEEncj59ag2Kl30mAz8BwelPH63+IBgAAAAASUVORK5CYII=" />
+            <input type="password" id="password" placeholder="Password">
+            <button type="button" id="show" onclick="showpassword()"></button>
+        </div>
+        <hr id="hrb">
+        <p style="margin-left: 125px; font-size: 15px; display: none; color: red;" id="pass">Incorrect Password</p>
+        <h4 id="forgot">Forgot password</h4>
+        <button type="submit" id="submit">Login</button>
+    </div>
+</body>
+
+</html>

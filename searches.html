@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="searches.css">
+    <title>Document</title>
+</head>
+<body>
+    <p style="margin: 0;font-size: 40px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; align-items: center;justify-content: center;display: flex;background-color:rgb(173, 235, 255);padding-top: 20px;padding-bottom: 20px;">Search for candidates</p>
+    <div id="searches">
+    <input type="text" id="search1" placeholder="    Enter Name and location"><button id="button" onclick="funct1()">Add</button>
+    <input type="text" id="search2" placeholder="    Enter Job"><button id="button" onclick="funct2()">Add</button>
+    </div>
+    <div id="mid">
+        <div id="name">
+            <p style=" align-items:center;justify-content:center;display:flex;width:300px;margin:0;font-size: 30px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Name and Location</p>
+        </div>
+        <div id="job">
+        <p style="align-items:center;justify-content:center;display:flex;width:300px;margin:0;font-size: 30px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Job</p>
+        </div>
+    </div>
+    <script>
+        const btn=document.getElementById('button')
+        let name=document.getElementById('name')
+        let job=document.getElementById('job')
+        let search1=document.getElementById('search1')
+        let search2=document.getElementById('search2')
+        function funct1(){
+            let a=document.createElement('div')
+            a.style.background="lightblue"
+            a.style.height='20px'
+            a.style.margin='10px'
+            a.style.borderRadius='5px'
+            a.style.alignItems='center'
+            a.style.justifyContent='center'
+            a.style.display='flex'
+            a.style.fontSize='20px'
+            a.innerHTML=search1.value
+            name.appendChild(a)
+        }
+        function funct2(){
+            let a=document.createElement('div')
+            a.style.background="lightblue"
+            a.style.height='20px'
+            a.style.margin='10px'
+            a.style.borderRadius='5px'
+            a.style.alignItems='center'
+            a.style.justifyContent='center'
+            a.style.display='flex'
+            a.style.fontSize='20px'
+            a.innerHTML=search2.value
+            job.appendChild(a)
+        }
+    </script>
+</body>
+</html>
