@@ -9,8 +9,8 @@ body{
     border-radius: 20px;
     background-color: white;
     position: absolute;
-    top: 100px;
-    left: 600px;
+    top: 10%;
+    left: 40%;
     font-family: 'Poppins', sans-serif;
 }
 .register{
